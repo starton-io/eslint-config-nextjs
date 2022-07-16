@@ -18,7 +18,7 @@ yarn add -D @starton/eslint-config-nextjs
 3. Modify the `.eslintrc` file in your project to include the following code:
 ```json
 {
-	"extends": [ "next/core-web-vitals", "@starton/eslint-config-nextjs" ]
+  "extends": [ "next/core-web-vitals", "@starton/eslint-config-nextjs" ]
 }
 ```
 
@@ -32,22 +32,24 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
-```js
-	  // These are all my auto-save configs
-	  "editor.formatOnSave": true,
-	  // turn it off for JS and JSX, we will do this via eslint
-	  "[javascript]": {
-		"editor.formatOnSave": false
-	  },
-	  "[javascriptreact]": {
-		"editor.formatOnSave": false
-	  },
-	  // show eslint icon at bottom toolbar
-	  "eslint.alwaysShowStatus": true,
-	  // tell the ESLint plugin to run on save
-	  "editor.codeActionsOnSave": {
-		"source.fixAll": true
-	  }
+```
+{
+  // These are all my auto-save configs
+  "editor.formatOnSave": true,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+	"editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+	"editor.formatOnSave": false
+  },
+  // show eslint icon at bottom toolbar
+  "eslint.alwaysShowStatus": true,
+  // tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+	"source.fixAll": true
+  }
+}
 ```
 
 After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
