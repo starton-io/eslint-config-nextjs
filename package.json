@@ -1,0 +1,48 @@
+{
+	"name": "@starton/eslint-config-nextjs",
+	"version": "1.0.0",
+	"description": "Library including the code standard for NextJS projects from Starton.",
+	"main": "index.js",
+	"repository": "https://github.com/starton-io/eslint-config-nextjs",
+	"homepage": "https://github.com/starton-io/eslint-config-nextjs#readme",
+	"license": "MIT",
+	"keywords": [
+		"starton",
+		"eslint",
+		"prettier",
+		"typescript",
+		"code-quality",
+		"nextjs",
+		"react"
+	],
+	"author": {
+		"name": "Starton",
+		"email": "hello@starton.io",
+		"url": "https://www.starton.io"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix"
+	},
+	"resolutions": {
+		"eslint-plugin-react": "7.30.1",
+		"eslint-plugin-react-hooks": "4.6.0"
+	},
+	"peerDependencies": {
+		"eslint": "^7.23.0 || ^8.0.0",
+		"typescript": ">=3.3.1"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
+		"eslint": "^8.19.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.7.1",
+		"typescript": "4.7.4"
+	}
+}
