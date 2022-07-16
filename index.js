@@ -33,6 +33,7 @@ module.exports = {
 				'@typescript-eslint/ban-ts-comment': 'off',
 				'@typescript-eslint/no-empty-interface': 'off',
 				'@typescript-eslint/no-unsafe-assignment': 'off',
+				'@typescript-eslint/unbound-method': 'off',
 			},
 		},
 	],
