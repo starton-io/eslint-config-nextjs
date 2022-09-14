@@ -29,7 +29,6 @@ module.exports = {
 				project: ['./tsconfig.json'], // Specify it only for TypeScript files
 			},
 			rules: {
-				'@typescript-eslint/no-unused-vars': 'error',
 				'@typescript-eslint/ban-ts-comment': 'off',
 				'@typescript-eslint/no-empty-interface': 'off',
 				'@typescript-eslint/no-unsafe-assignment': 'off',
@@ -38,6 +37,7 @@ module.exports = {
 				'@typescript-eslint/no-misused-promises': 'off',
 				'@typescript-eslint/no-unsafe-argument': 'off',
 				'@typescript-eslint/unbound-method': 'off',
+				"@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }]
 			},
 		},
 	],
