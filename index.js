@@ -37,7 +37,8 @@ module.exports = {
 				'@typescript-eslint/no-misused-promises': 'off',
 				'@typescript-eslint/no-unsafe-argument': 'off',
 				'@typescript-eslint/unbound-method': 'off',
-				"@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }]
+				"@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+				'@typescript-eslint/no-unsafe-call': 'off',
 			},
 		},
 	],
