@@ -1,28 +1,45 @@
+![Starton Banner](https://github.com/starton-io/.github/blob/master/github-banner.jpg?raw=true)
+
 # Starton - Code standard for TypeScript project
 
 Library including the code standard for NextJS projects from Starton.
 
-## Installing
+## Requirements
 
-1. Initialize your NextJS project ([https://nextjs.org/docs/getting-started](https://nextjs.org/docs/getting-started))
+You will need :
+- [NodeJS](https://nodejs.org/en) (we recommend the use of [nvm](https://github.com/nvm-sh/nvm))
+- [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 
-2. Install dependency with `npm` or `yarn`
-```
-npm install -D @starton/eslint-config-nextjs
-```
-or
-```
-yarn add -D @starton/eslint-config-nextjs
-```
+## Installation
 
-3. Modify the `.eslintrc` file in your project to include the following code:
+To install the project, first clone the repository and go inside project directory, then :
+
+- With [yarn](https://yarnpkg.com/) :
+    ```bash
+    $ yarn install
+    ```
+
+- With [NPM](https://www.npmjs.com/) :
+    ```bash
+    $ npm install
+    ```
+
+Modify the `.eslintrc` or `.eslintrc.js` file in your project to include the following code:
 ```json
 {
   "extends": [ "next/core-web-vitals", "@starton/eslint-config-nextjs" ]
 }
 ```
 
-4. Your NextJS project is ready to use the Starton code standard! Congratulations 🥳
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+* `NODE_ENV` : is a system environment variable that Node exposes into running scripts
+* `URL` : the URL of the documentation (example: https://docs.starton.com)
+* `SEGMENT_KEY` : [Segment](https://segment.com/docs/) API key
+* `GTM_KEY` : [Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/web/datalayer) API Key
+
 
 ## With VS Code
 
@@ -70,5 +87,28 @@ If you have previously configured ESLint to run via a File Watcher, [turn that o
 1. Open Prettier configuration by going to File > Settings (Edit > Preferences on Mac) > Languages & Frameworks > Code Quality Tools > Prettier (optionally just search settings for "prettier")
 1. Uncheck both **On code reformat** and **On save**
 1. *Optional BUT IMPORTANT:* If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already.
-    1. Make sure the **Run for files** glob does not include `js,ts,jsx,tsx`.
-    2. An example glob for styles, config, and markdown. `{**/*,*}.{yml,css,sass,md}`
+	1. Make sure the **Run for files** glob does not include `js,ts,jsx,tsx`.
+	2. An example glob for styles, config, and markdown. `{**/*,*}.{yml,css,sass,md}`
+
+
+## Documentation
+
+Find out more on how to use Starton in our [Documentation](https://docs.starton.com/)
+
+## Contributing
+
+Contributions are always welcome!
+
+See [Contributing](/CONTRIBUTING.md) for ways to get started.
+
+Please adhere to Starton's [Code of Conduct](/CODE_OF_CONDUCT.md).
+
+## License
+
+[Apache License 2.0](/LICENSE.md)
+
+## Authors
+
+- Starton [support@starton.com](mailto:support@starton.com)
+- Calixte DE TOURRIS [calixte@starton.com](mailto:calixte@starton.com)
+- Philippe DESPLATS [philippe@starton.com](mailto:philippe@starton.com)
